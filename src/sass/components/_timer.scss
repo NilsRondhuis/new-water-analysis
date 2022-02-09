@@ -1,0 +1,59 @@
+.timer {
+    display: flex;
+    margin: -5px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 3px;
+
+    @include for-size(desktop) {
+        margin: -15px;
+    }
+}
+.timer__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: calc((100% - 4 * 10px) / 4);
+    margin: 5px;
+    padding: 20px 0;
+    text-align: center;
+    background-color: var(--white-bg);
+    box-shadow: 1px 2px 8px 0px rgba(34, 60, 80, 0.2);
+
+    @include for-size(desktop) {
+        margin: 15px;
+        padding: 20px 10px;
+        flex-basis: calc((100% - 4 * 30px) / 4);
+    }
+}
+.timer__num {
+    margin: 0 0 30px 0;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-font-second);
+
+    @include for-size(tablet) {
+        margin: 0px 0 55px 0;
+        font-size: 45px;
+    }
+    @include for-size(desktop) {
+        margin: 0px 0 65px 0;
+        font-size: 70px;
+    }
+}
+.timer__text {
+    width: 100%;
+    padding: 3px;
+    color: var(--white);
+    background-color: var(--sky-blue);
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+    @include for-size(tablet) {
+        font-size: 24px;
+        box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
+    }
+    @include for-size(desktop) {
+        padding: 10px;
+    }
+}

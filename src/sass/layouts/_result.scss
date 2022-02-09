@@ -1,0 +1,85 @@
+.section-result {
+    background-color: rgb(239 252 253);
+
+    @include for-size(desktop) {
+        background-image: url(../images/result/bg/circle-blue.png), url(../images/result/bg/circle-white.png), url(../images/result/bg/circle-blue.png), url(../images/result/bg/circle-white.png), url(../images/result/bg/circle-blue.png), url(../images/result/bg/circle-white.png), url(../images/result/bg/circle-blue.png), url(../images/result/bg/circle-white.png), url(../images/result/bg/circle-blue.png), url(../images/result/bg/circle-white.png), url(../images/result/bg/circle-blue.png), url(../images/result/bg/circle-white.png), url(../images/result/bg/circle-blue.png), url(../images/result/bg/circle-white.png), url(../images/result/bg/circle-blue.png), url(../images/result/bg/circle-white.png);
+        background-repeat: no-repeat;
+        background-size: 110px, 90px, 85px, 80px, 60px, auto, 40px, 70px, 40px, 50px, 55px, 80px, 60px, 100px, 110px, auto;
+        background-position: 5% 95%, 35% 29%, 18% 75%, 10% 65%, 15% 50%, 18% 10%, -1% 8%, 5% 40%, 85% 20%, 95% 10%, 75% 35%, 90% 50%, 95% 38%, 101% 70%, 90% 85%, 10% 25%;
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: url(../images/result/bg/circle-blue@2x.png), url(../images/result/bg/circle-white@2x.png), url(../images/result/bg/circle-blue@2x.png), url(../images/result/bg/circle-white@2x.png), url(../images/result/bg/circle-blue@2x.png), url(../images/result/bg/circle-white@2x.png), url(../images/result/bg/circle-blue@2x.png), url(../images/result/bg/circle-white@2x.png), url(../images/result/bg/circle-blue@2x.png), url(../images/result/bg/circle-white@2x.png), url(../images/result/bg/circle-blue@2x.png), url(../images/result/bg/circle-white@2x.png), url(../images/result/bg/circle-blue@2x.png), url(../images/result/bg/circle-white@2x.png), url(../images/result/bg/circle-blue@2x.png), url(../images/result/bg/circle-white@2x.png);
+        }
+    }
+}
+.section-result__title {
+    margin-bottom: 30px;
+}
+.list-sale {
+    @include for-size(tablet) {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: -5px;
+    }
+    @include for-size(desktop) {
+        margin: -10px;
+    }
+} 
+.list-sale__item {
+    padding: 20px;
+    text-align: center;
+    border: 2px solid var(--sky-blue);
+    border-radius: 14px;
+    background-color: var(--white);
+    box-shadow: 1px 2px 8px -3px rgba(34, 60, 80, 0.2);
+    cursor: pointer;
+
+    @include for-size(mobile-only) {
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+    @include for-size(tablet) {
+        margin: 5px;
+        flex-basis: calc((100% - 10px * 4) / 2);
+    }
+    @include for-size(desktop) {
+        margin: 10px;
+        flex-basis: calc((100% - 20px * 4) / 4);
+        transition: border-color 250ms linear;
+
+        &:hover,
+        &:focus {
+            border-color: var(--icon-cl);
+        }
+        &:hover .list-sale__icon,
+        &:focus .list-sale__icon {
+            fill: var(--icon-cl);
+        }
+    }
+}
+.list-sale__icon {
+    width: 70px;
+    height: 70px;
+    fill: var(--sky-blue);
+    transition: fill 250ms linear;
+}
+.list-sale__title {
+    margin: 20px 0 0 0;
+    // font-family: Open Sans;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.62;
+    color: var(--text-font-second);
+
+    @include for-size(desktop) {
+        font-size: 18px;
+        line-height: 1.67;
+    }
+}
+.result-container-table {
+    margin-top: 50px;
+}

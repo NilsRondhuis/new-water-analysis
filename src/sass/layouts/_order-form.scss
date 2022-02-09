@@ -1,0 +1,41 @@
+.section-order-form {
+    text-align: center;
+
+    @include for-size(desktop) {
+        padding-left: 100px;
+        padding-right: 100px;
+        width: 50%;
+        background-image: url(../images/form/bg/drop-reverse.png), url(../images/form/bg/circle.png);
+        background-repeat: no-repeat;
+        background-size: 230px, auto;
+        background-position: 100% -20%, -25% 135%;
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: url(../images/form/bg/drop-reverse@2x.png), url(../images/form/bg/circle@2x.png);
+        }
+
+    }
+}
+.section-order-form__container {
+    @include for-size(desktop) {
+        width: 100%;
+    }
+}
+.section-order-form__subhead {
+    margin: 0 0 20px 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.62;
+
+    @include for-size(tablet) {
+        font-size: 18px;
+        line-height: 1.67;
+    }
+}
+.container-flex-section {
+    @include for-size(desktop) {
+        display: flex;
+    }
+}

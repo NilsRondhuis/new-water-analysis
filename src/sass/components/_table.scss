@@ -1,0 +1,47 @@
+table {
+    width: 100%;
+    color: var(--text-font-second);
+    background-color: var(--white);
+    border-collapse: collapse;
+    border: 1px solid var(--text-font-second);
+    // box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+}
+tr,
+th,
+td {
+    // width: 50%;
+    border: 1px solid var(--text-font-second); 
+}
+td {
+    &:nth-child(1) {
+        font-weight: 500;
+        font-size: 16px;
+
+        @include for-size(desktop) {
+            font-size: 18px; 
+        }
+    }
+    &:nth-child(2) {
+        text-align: center;
+    }
+}
+th {
+    padding: 10px;
+    font-size: 18px;
+    line-height: 1.67;
+}
+td {
+    padding: 5px 30px;
+}
+.table__title {
+    margin: 0 0 10px 0;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.67;
+    color: var(--title-cl);
+    
+    @include for-size(tablet) {
+        font-size: 24px;
+    }
+}

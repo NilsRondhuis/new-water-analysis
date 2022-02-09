@@ -1,0 +1,118 @@
+.hero {
+    position: relative;
+    background-color: rgba(34, 60, 80, 0.6);
+
+    @include for-size(desktop) {
+        padding: 50px 0;
+        background-color: inherit;
+        background-image: url(../images/hero/bg/drop-large.png);
+        background-repeat: no-repeat;
+        background-position: left bottom, right 90%;
+        background-size: 30%, 25%;
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: url(../images/hero/bg/drop-large@2x.png);
+        }
+    }
+
+}
+.hero--shadow-bottom {
+    box-shadow: 0px 0px 10px -2px rgba(34, 60, 80, 0.3);
+
+    @include for-size(desktop) {
+        box-shadow: none;
+    }
+}
+.container-hero {
+    display: none;
+
+    @include for-size(desktop) {
+        display: flex;
+    }
+}
+.container-cards {
+    width: 70%;
+}
+.list-cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+.list-cards__item {
+    margin: 15px;
+    padding: 130px 30px 40px 30px;
+    flex-basis: calc((100% - 4 * 15px) / 2);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 2px;
+    transition: transform 250ms linear;
+    cursor: pointer;
+    box-shadow: 0px 1px 8px 0px rgba(34, 60, 80, 0.2);
+
+    &:hover,
+    &:focus {
+        transform: scale(1.1);
+    }
+
+    &:nth-child(1) {
+        background-image: linear-gradient(180deg, rgba(2,1,17,0.30015756302521013) 0%, rgba(2,1,17,0.2049194677871149) 50%, rgba(2,1,17,0.10127801120448177) 100%), url(../images/hero/bg-img-1.jpg);
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: linear-gradient(180deg, rgba(2,1,17,0.30015756302521013) 0%, rgba(2,1,17,0.2049194677871149) 50%, rgba(2,1,17,0.10127801120448177) 100%), url(../images/hero/bg-img-1@2x.jpg);
+        }
+    }
+    &:nth-child(2) {
+        background-image: linear-gradient(180deg, rgba(2,1,17,0.30015756302521013) 0%, rgba(2,1,17,0.2049194677871149) 50%, rgba(2,1,17,0.10127801120448177) 100%), url(../images/hero/bg-img-2.jpg);
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: linear-gradient(180deg, rgba(2,1,17,0.30015756302521013) 0%, rgba(2,1,17,0.2049194677871149) 50%, rgba(2,1,17,0.10127801120448177) 100%), url(../images/hero/bg-img-2@2x.jpg);
+        }
+    }
+    &:nth-child(3) {
+        background-image: linear-gradient(180deg, rgba(2,1,17,0.30015756302521013) 0%, rgba(2,1,17,0.2049194677871149) 50%, rgba(2,1,17,0.10127801120448177) 100%), url(../images/hero/bg-img-3.jpg);
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: linear-gradient(180deg, rgba(2,1,17,0.30015756302521013) 0%, rgba(2,1,17,0.2049194677871149) 50%, rgba(2,1,17,0.10127801120448177) 100%), url(../images/hero/bg-img-3@2x.jpg);
+        }
+    }
+    &:nth-child(4) {
+        background-image: linear-gradient(180deg, rgba(2,1,17,0.30015756302521013) 0%, rgba(2,1,17,0.2049194677871149) 50%, rgba(2,1,17,0.10127801120448177) 100%), url(../images/hero/bg-img-4.jpg);
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: linear-gradient(180deg, rgba(2,1,17,0.30015756302521013) 0%, rgba(2,1,17,0.2049194677871149) 50%, rgba(2,1,17,0.10127801120448177) 100%), url(../images/hero/bg-img-4@2x.jpg);
+        }
+    }
+}
+.list-cards__questions--card {
+    margin: 0;
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--white);
+}
+.container-order-hero {
+    width: 30%;
+}
+.btn-order-analysis__desktop {
+    display: inline-block;
+    padding: 20px 40px;
+    box-shadow: 0px 1px 8px 0px rgba(34, 60, 80, 0.2);
+    transition: all 250ms linear;
+    border: 1px solid var(--sky-blue);
+
+    &:hover,
+    &:focus {
+        color: var(--sky-blue);
+        background-color: var(--white);
+    }
+}

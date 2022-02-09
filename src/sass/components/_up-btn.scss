@@ -1,0 +1,24 @@
+.up-btn {
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+    transform: translateY(400%);
+    display: inline-block;
+    margin: 0;
+    padding: 10px;
+    background-image: linear-gradient(300deg, rgba(85,218,233,1) 0%, rgba(47,144,221,1) 50%, rgba(32,117,187,1) 100%);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 1px rgba(34, 60, 80, 0.2);
+    z-index: 22;
+    transition: transform 250ms ease;
+}
+.up-btn__icon {
+    width: 25px;
+    height: 25px;
+    fill: var(--white);
+}
+.btn-anim {
+    transform: translateY(20%);
+}
