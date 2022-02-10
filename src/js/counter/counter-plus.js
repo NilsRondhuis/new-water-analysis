@@ -34,7 +34,7 @@ function observerCbHome(entries) {
         entries,
         refs: refs.favouriteListHome,
         previosValue: 800,
-        valueLoading: 700,
+        valueLoading: document.body.clientWidth < 1199 ? 700 : 400,
         time: 0.1,
         intervalId: intervalIdHome,
     });
@@ -44,7 +44,7 @@ function observerCbSchool(entries) {
         entries,
         refs: refs.favouriteListSchool,
         previosValue: 15,
-        valueLoading: 7,
+        valueLoading: document.body.clientWidth < 1199 ? 7 : 2,
         time: 100,
         intervalId: intervalIdSchool,
     });
@@ -64,7 +64,7 @@ function observerCbBussines(entries) {
         entries,
         refs: refs.favouriteListBussines,
         previosValue: 12,
-        valueLoading: 5,
+        valueLoading: document.body.clientWidth < 1199 ? 5 : 2,
         time: 100,
         intervalId: intervalIdBussines,
     });
