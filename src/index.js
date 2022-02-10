@@ -11,5 +11,6 @@ import './js/common/height-contacts';
 import './js/common/scroll-into-start';
 import './js/btn-order/btn-order';
 import './js/btn-up/btn-up';
+import './main';
 // import './js/slider-works/slider-works';
 
