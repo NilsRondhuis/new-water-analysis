@@ -12,7 +12,7 @@ export default function () {
         closerHover: document.body.clientWidth < 1199 ? false : true,
         icon: false,
         shadow: true,
-        delay: 111113000,
+        delay: 3000,
         sticker: false,
     });
 }
