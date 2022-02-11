@@ -1,3 +1,8 @@
+import removeClassSubmitForm from './js/form/remove-class-submit-form';
+import onSuccess from './js/form/success-submit-form';
+import onError from './js/form/error-submit-form';
+
+
 $('.telegram-form').on('submit', function (event) {
 
     event.stopPropagation();
@@ -10,7 +15,9 @@ $('.telegram-form').on('submit', function (event) {
 
 
     $('.submit', form).val('Отправка...');
-    $('input, textarea', form).attr('disabled','');
+    $('input, textarea', form);
+
+    //.attr('disabled','')
 
     data.append( 'Имя', 		    $('[name="name"]', form).val() );
     data.append( 'Телефон', 		$('[name="phone"]', form).val() );
@@ -54,11 +61,14 @@ $('.telegram-form').on('submit', function (event) {
         },
         error: function( jqXHR, textStatus ) {
             // Тут выводим ошибку
+            onError()
         },
         complete: function() {
             // Тут можем что-то делать ПОСЛЕ успешной отправки формы
             console.log('Complete')
             form.reset() 
+            removeClassSubmitForm()
+            onSuccess()
         }
     });
 

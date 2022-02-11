@@ -10,6 +10,8 @@
       integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
       crossorigin="anonymous"
     />
+    <link href="../node_modules/@pnotify/core/dist/PNotify.css" rel="stylesheet" type="text/css" />
+    <link href="../node_modules/@pnotify/mobile/dist/PNotifyMobile.css" rel="stylesheet" type="text/css" />
     <link rel="shortcut icon" href="./images/logo/logo.png" type="image/png">
   </head>
   <body>
@@ -612,7 +614,7 @@
         <div class="container section-order-form__container">
           <h2 class="section-title">Замовити аналіз</h2>
           <p class="section-order-form__subhead">Наші спеціалісти зв'яжуться з Вами в найближчий час.</p>
-          <form class="form telegram-form" method="post" action="send-telegram.php" onsubmit="return false">
+          <form class="form telegram-form">
             <label class="form__field">
               <input class="form__input js-input-name" type="text" name="name">
               <span class="form__label js-label-name">Ім'я<span class="requared">*</span></span>
@@ -622,7 +624,7 @@
               <span class="form__label js-label-tel">Номер<span class="requared">*</span></span>
             </label>
             <textarea class="form__message js-form-message" cols="30" rows="5" placeholder="Коментар до замовлення..." name="text"></textarea>
-            <div class="form__container-btn"><button type="submit" class="btn-order-analysis">Замовити аналіз</button></div>
+            <div class="form__container-btn"><button type="submit" class="btn-order-analysis form__btn">Замовити аналіз</button></div>
           </form>
         </div>
       </section>

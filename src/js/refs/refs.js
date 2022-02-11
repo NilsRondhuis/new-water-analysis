@@ -24,6 +24,7 @@ export default {
     orderFormSection: document.querySelector('.section-order-form'),
     contactsSection: document.querySelector('.section-contacts'),
 
+    form: document.querySelector('.form'),
     inputName: document.querySelector('.js-input-name'),
     labelName: document.querySelector('.js-label-name'),
     inputTel: document.querySelector('.js-input-tel'),

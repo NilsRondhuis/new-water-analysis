@@ -77,6 +77,16 @@
 .form__container-btn {
     text-align: center;
 }
+.form__btn {
+    border: 1px solid var(--sky-blue);
+    box-shadow: 0px 1px 8px 0px rgba(34, 60, 80, 0.2);
+
+    &:hover,
+    &:focus {
+        color: var(--sky-blue);
+        background-color: var(--white);
+    }
+}
 .form__input--color-is-focus {
     -webkit-border-bottom: 2px solid var(--text-font-second);
     border-bottom: 2px solid var(--text-font-second);
