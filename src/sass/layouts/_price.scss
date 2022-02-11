@@ -19,7 +19,6 @@
     display: inline-block;
     font-weight: 700;
     color: var(--white);
-    // background-color: orange;
     border: 50px solid transparent;
     border-top: 50px solid orange;
     border-right: 50px solid orange;
@@ -47,7 +46,7 @@
 }
 .section-price__overhead {
     margin: 0 0 20px 0;
-    // font-family: Open Sans;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 18px;
     line-height: 1.39;
@@ -110,6 +109,7 @@
 }
 .section-price__timer-title {
     margin: 0 0 20px 0;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 18px;
     line-height: 1.16;

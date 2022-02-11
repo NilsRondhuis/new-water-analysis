@@ -31,12 +31,5 @@ export default {
     labelTel: document.querySelector('.js-label-tel'),
     formMessage: document.querySelector('.js-form-message'),
 
-    imagesSlider: document.querySelectorAll('.slider-works__pic'),
-    sliderWorks: document.querySelector('.slider-works'),
-    sliderLine: document.querySelector('.slider-works__line'),
-    sliderBtnPrev: document.querySelector('.slider-works__btn-prev'),
-    sliderBtnNext: document.querySelector('.slider-works__btn-next'),
-
     btnUp: document.querySelector('.up-btn'),
-
 };

@@ -3,9 +3,7 @@ html {
 }
 
 body {
-    // position: relative;
-    // font-family: Roboto;
-    // font-family: Open Sans;
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -14,7 +12,7 @@ body {
     color: var(--text-font);
 
     @include for-size(desktop) {
-        font-size: 16px;
+        font-size: 18px;
     }
 }
 
@@ -78,7 +76,7 @@ input {
     display: flex;
     align-items: baseline;
     margin: 0 0 10px 0;
-    // font-family: Raleway;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 28px;
     line-height: 1.18;
