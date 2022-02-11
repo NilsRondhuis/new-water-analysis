@@ -6,9 +6,6 @@
         text-align: start;
     }
 }
-.section-work__title {
-    margin-bottom: 30px;
-}
 .work-container-content {
     @include for-size(tablet) {
         display: flex;
