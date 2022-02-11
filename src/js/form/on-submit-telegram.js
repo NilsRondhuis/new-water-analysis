@@ -1,6 +1,6 @@
-import removeClassSubmitForm from './js/form/remove-class-submit-form';
-import onSuccess from './js/form/success-submit-form';
-import onError from './js/form/error-submit-form';
+import removeClassSubmitForm from './remove-class-submit-form';
+import onSuccess from './success-submit-form';
+import onError from './error-submit-form';
 
 
 $('.telegram-form').on('submit', function (event) {
@@ -36,7 +36,7 @@ $('.telegram-form').on('submit', function (event) {
     });
     
     $.ajax({
-        url: 'ajax.php',
+        url: '../../ajax.php',
         type: 'POST',
         data: data,
         cache: false,
@@ -61,11 +61,15 @@ $('.telegram-form').on('submit', function (event) {
         },
         error: function( jqXHR, textStatus ) {
             // Тут выводим ошибку
-            onError()
+            if (textStatus === 'error') {
+                onError()
+            } else return
         },
-        complete: function() {
+        complete: function(jqXHR, textStatus) {
             // Тут можем что-то делать ПОСЛЕ успешной отправки формы
-            console.log('Complete')
+            if (textStatus === 'error') {
+                return
+            }
             form.reset() 
             removeClassSubmitForm()
             onSuccess()

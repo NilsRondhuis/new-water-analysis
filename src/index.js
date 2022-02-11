@@ -15,7 +15,5 @@ import './js/common/height-contacts';
 import './js/common/scroll-into-start';
 import './js/btn-order/btn-order';
 import './js/btn-up/btn-up';
-import './on-submit-telegram';
-import './ajax.php';
-// import './js/slider-works/slider-works';
+import './js/form/on-submit-telegram';
 

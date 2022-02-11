@@ -7,7 +7,7 @@ defaultModules.set(PNotifyMobile, {});
 export default function () {
     error({
         title: 'Сталася помилка :(',
-        text: 'Спробуйте заповнити дані ще раз.',
+        text: "Спробуйте заповнити дані ще раз, або відновити зв'язок з інтернетом.",
         maxTextHeight: null,
         closerHover: document.body.clientWidth < 1199 ? false : true,
         icon: false,

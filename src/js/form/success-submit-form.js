@@ -8,7 +8,7 @@ defaultModules.set(PNotifyMobile, {});
 export default function() {
     success({
         title: 'Чудово!',
-        text: 'Ваша заявка прийнята, очікуйте дзвінок спеціаліста.',
+        text: 'Ваша заявка прийнята, очікуйте на дзвінок спеціаліста.',
         maxTextHeight: null,
         closerHover: document.body.clientWidth < 1199 ? false : true,
         icon: false,
