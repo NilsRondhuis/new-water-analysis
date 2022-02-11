@@ -2,11 +2,20 @@
     border: none !important;
 }
 
+.pnotify-title,
 .brighttheme-title {
     .pnotify-pre-line {
+        font-size: 24px;
         font-weight: 700;
     }
 }
+.pnotify-text,
+.brighttheme-text {
+    .pnotify-pre-line {
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
 .pnotify-pre-line {
-    color: gray;
+    color: white;
 }
