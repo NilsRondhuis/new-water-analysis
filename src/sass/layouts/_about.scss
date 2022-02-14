@@ -17,6 +17,10 @@
 .about-container-content {
     @include for-size(tablet) {
         display: flex;
+        align-items: center;
+    }
+    @include for-size(desktop) {
+        align-items: flex-start;
     }
 }
 .about-container-content__text {
@@ -41,13 +45,28 @@
         margin: 0 0 40px 0;
     }
     @include for-size(desktop) {
-        margin: 40px 0;
         font-size: 18px;
         line-height: 1.67;
     }
 }
 .about-container-content__desc {
     margin: 0;
+    @include for-size(mobile-only) {
+        text-align: center;
+    }
+
+    .bold-name-company {
+        font-weight: 700;
+        color: var(--title-cl);
+    }
+    .consultation {
+        font-style: normal;
+        color: var(--text-font-second);
+    }
+    .analysis {
+        font-style: normal;
+        color: var(--text-font-second);
+    }
 }
 .about-container-content__img {
     display: none;

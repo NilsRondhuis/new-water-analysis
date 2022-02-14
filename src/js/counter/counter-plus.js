@@ -33,8 +33,8 @@ function observerCbHome(entries) {
     intervalCb({
         entries,
         refs: refs.favouriteListHome,
-        previosValue: 800,
-        valueLoading: document.body.clientWidth < 1199 ? 750 : 400,
+        previosValue: 950,
+        valueLoading: document.body.clientWidth < 1199 ? 900 : 500,
         time: 0.1,
         intervalId: intervalIdHome,
     });
@@ -43,8 +43,8 @@ function observerCbSchool(entries) {
     intervalCb({
         entries,
         refs: refs.favouriteListSchool,
-        previosValue: 15,
-        valueLoading: document.body.clientWidth < 1199 ? 7 : 2,
+        previosValue: 20,
+        valueLoading: document.body.clientWidth < 1199 ? 12 : 2,
         time: 100,
         intervalId: intervalIdSchool,
     });
@@ -53,8 +53,8 @@ function observerCbCaffe(entries) {
     intervalCb({
         entries,
         refs: refs.favouriteListCaffe,
-        previosValue: 45,
-        valueLoading: 24,
+        previosValue: 60,
+        valueLoading: document.body.clientWidth < 1199 ? 44 : 34,
         time: 100,
         intervalId: intervalIdCaffe,
     });
@@ -63,8 +63,8 @@ function observerCbBussines(entries) {
     intervalCb({
         entries,
         refs: refs.favouriteListBussines,
-        previosValue: 12,
-        valueLoading: document.body.clientWidth < 1199 ? 5 : 2,
+        previosValue: 25,
+        valueLoading: document.body.clientWidth < 1199 ? 17 : 2,
         time: 100,
         intervalId: intervalIdBussines,
     });

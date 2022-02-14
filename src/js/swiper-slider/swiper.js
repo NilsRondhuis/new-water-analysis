@@ -40,6 +40,7 @@ Swiper.use([
 new Swiper('.swiper', {
     enabled: true,
     effect: 'slide',
+    autoHeight: true,
     autoplay: {
         delay: 5000,
         disableOnInteraction: true,
