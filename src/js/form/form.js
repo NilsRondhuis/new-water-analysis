@@ -6,6 +6,9 @@ refs.inputName.addEventListener('blur', onNotFocusInputName);
 refs.inputTel.addEventListener('focus', onFocusInputTel);
 refs.inputTel.addEventListener('blur', onNotFocusInputTel);
 
+refs.inputCity.addEventListener('focus', onFocusInputCity);
+refs.inputCity.addEventListener('blur', onNotFocusInputCity);
+
 refs.formMessage.addEventListener('focus', onFocusMessage);
 refs.formMessage.addEventListener('blur', onNotFocusMessage);
 
@@ -34,6 +37,17 @@ function onNotFocusInputTel(e) {
         e.currentTarget.value = '';
     } else if (e.currentTarget.value === '') {
         refs.labelTel.classList.remove('form__label-is-focus');
+        e.currentTarget.classList.remove('form__input--color-is-focus');
+    } else return;
+}
+
+function onFocusInputCity(e) {
+    refs.labelCity.classList.add('form__label-is-focus');
+    e.currentTarget.classList.add('form__input--color-is-focus');
+}
+function onNotFocusInputCity(e) {
+    if (e.currentTarget.value === '') {
+        refs.labelCity.classList.remove('form__label-is-focus');
         e.currentTarget.classList.remove('form__input--color-is-focus');
     } else return;
 }

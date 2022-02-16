@@ -29,6 +29,8 @@ export default {
     labelName: document.querySelector('.js-label-name'),
     inputTel: document.querySelector('.js-input-tel'),
     labelTel: document.querySelector('.js-label-tel'),
+    inputCity: document.querySelector('.js-input-city'),
+    labelCity: document.querySelector('.js-label-city'),
     formMessage: document.querySelector('.js-form-message'),
 
     btnUp: document.querySelector('.up-btn'),

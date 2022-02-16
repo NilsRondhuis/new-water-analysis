@@ -95,7 +95,7 @@
           </div>
           <div class="swiper-slide">
             <div class="swiper-slide__box swiper-slide__box--img-green">
-              <p class="swiper-slide__questions">Чи влаштовує Вас смак води?</p>
+              <p class="swiper-slide__questions">Чи влаштовує Вас смак води в дома?</p>
               <button type="button" class="btn-order-analysis">Замовити аналіз</button>
             </div>
           </div>
@@ -138,7 +138,7 @@
           <div class="about-container-content__text">
             <h2 class="about-container-content__overhead">Професійна водопідготовка №1 в Київській області.</h2>
         
-            <p class="about-container-content__desc"><span class="bold-name-company">Цент Очищення Води</span> у м. Біла Церква, надає якісний сервіс по монтажу, проектуванню та технічному обслуговуванні систем очистки води. Наші досвідчені спеціалісти надають <em class="consultation">безкоштовну консультацію</em> та завжди готові відповісти на різні Ваші питання. <b>Турбота про наших клієнтів - це завжди вчасна технічна підримка обладнання, гарантія та результат.</b> Невід'ємна частина та вірний помічник для початку роботи є <em class="analysis">Аналіз води на 15 показників</em>, який ми беремо з криниці та свердловин... Працюємо не тільки в Київській обл. ведемо обслуговування по всій Україні.</p>
+            <p class="about-container-content__desc"><span class="bold-name-company">Цент Очищення Води</span> у м. Біла Церква, надає якісні послуги по проектуванню монтажу та технічному обслуговуванню систем очищення води. Наші досвідчені спеціалісти надають безкоштовну консультацію та завжди готові відповісти на різні Ваші питання. <b>Турбота про наших клієнтів - це завжди вчасна технічна підримка обладнання, гарантія та результат.</b> Невід'ємна частина та вірний помічник для початку роботи є <em class="analysis">аналіз води на 15 показників</em>, який ми беремо з свердловин, криниці, міського водопостачання та питної води. Працюємо не тільки в Київській обл. ведемо обслуговування по всій Україні.</p>
           </div>
           <div class="about-container-content__img">
             <div class="img-box">
@@ -362,7 +362,7 @@
 
         <div class="work-container-content">
           <div class="work-container-content__text-box">
-            <p class="work-container-content__text">На даний момент <span class="bold-name-company">Центр Очищення Води</span> нараховує близько <b>1000 об'єктів</b> в базі на постійному обслуговуванні. З яких є потужні заводи, підприємства, школи, дитячі садочки, ресторани, кав’ярні, приватні будинки та квартири. Також є багато клієнтів які не включені в базу, але купують у нас витратні матеріали та постійно отримують <em class="consultation">безшкотовну консультацію</em>.</p>
+            <p class="work-container-content__text">На даний момент <span class="bold-name-company">Центр Очищення Води</span> нараховує понад <b>1000 об'єктів</b> в базі на постійному обслуговуванні. З яких є потужні заводи, підприємства, школи, дитячі садочки, ресторани, кав’ярні, приватні будинки та квартири. Також є багато клієнтів які не включені в базу, але купують у нас витратні матеріали та постійно отримують безшкотовну консультацію.</p>
           </div>
 
           <div class="swiper__slider-work">
@@ -530,10 +530,14 @@
               <span class="form__label js-label-name">Ім'я<span class="requared">*</span></span>
             </label>
             <label class="form__field">
-              <input class="form__input js-input-tel" type="tel" name="phone" required pattern="\+[0-9]{12}">
+              <input class="form__input js-input-tel" type="tel" name="phone" required pattern="\+[(0-9)]{12,14}">
               <span class="form__label js-label-tel">Номер<span class="requared">*</span></span>
             </label>
-            <textarea class="form__message js-form-message" cols="30" rows="5" placeholder="Коментар до замовлення..." name="text"></textarea>
+            <label class="form__field">
+              <input class="form__input js-input-city" type="text" name="city" required pattern="\D{1,}">
+              <span class="form__label js-label-city">Населений пункт<span class="requared">*</span></span>
+            </label>
+            <textarea class="form__message js-form-message" cols="30" rows="5" placeholder="Напишіть коментарій або скарги на воду..." name="text"></textarea>
             <div class="form__container-btn"><button type="submit" class="btn-order-analysis form__btn">Замовити аналіз</button></div>
           </form>
         </div>

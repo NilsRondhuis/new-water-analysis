@@ -19,10 +19,10 @@ $('.telegram-form').on('submit', function (event) {
 
     //.attr('disabled','')
 
-    data.append( 'Имя', 		    $('[name="name"]', form).val() );
-    data.append( 'Телефон', 		$('[name="phone"]', form).val() );
-    // data.append( 'email', 		$('[name="email"]', form).val() );
-    data.append( 'Коментарий', 		$('[name="text"]', form).val() );
+    data.append( 'Имя', 		            $('[name="name"]', form).val() );
+    data.append( 'Телефон', 		        $('[name="phone"]', form).val() );
+    data.append( 'Населенный пункт', 		$('[name="city"]', form).val() );
+    data.append( 'Коментарий', 		        $('[name="text"]', form).val() );
     // data.append( 'file', 		$('[name="file"]', form).val() );
    
 
