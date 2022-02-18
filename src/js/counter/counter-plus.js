@@ -35,7 +35,7 @@ function observerCbHome(entries) {
         refs: refs.favouriteListHome,
         previosValue: 950,
         valueLoading: document.body.clientWidth < 1199 ? 900 : 500,
-        time: 0.1,
+        time: document.body.clientWidth < 1199 ? 30 : 0.1,
         intervalId: intervalIdHome,
     });
 }
