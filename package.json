@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "express": "^4.17.2",
+    "postcss": "^7.0.35",
     "swiper": "^7.3.1"
   }
 }
