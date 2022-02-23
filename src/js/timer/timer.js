@@ -48,7 +48,7 @@ class CountDownTimer {
 }
 
 const timer = new CountDownTimer({
-    date: new Date('February 22, 2022 19:42:00'),
+    date: new Date('February 27, 2022 20:00:00'),
     selector: '#timer-1',
 });
 
