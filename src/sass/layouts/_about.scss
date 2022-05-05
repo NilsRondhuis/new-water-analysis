@@ -1,79 +1,94 @@
 .section-about {
-    background-image: linear-gradient(180deg, rgba(85,218,233,0) 0%, rgba(85,218,233,0.053658963585434205) 50%, rgba(85,218,233,0.10127801120448177) 100%);
+  background-image: linear-gradient(
+    180deg,
+    rgba(85, 218, 233, 0) 0%,
+    rgba(85, 218, 233, 0.053658963585434205) 50%,
+    rgba(85, 218, 233, 0.10127801120448177) 100%
+  );
 
-    @include for-size(desktop) {
-        background-image: url(../images/about/bg/drop-mini-small.png), url(../images/about/bg/drop-mini-mid.png), url(../images/about/bg/drop-mini-large.png), url(../images/about/bg/pattern.png), url(../images/about/bg/pattern.png), linear-gradient(180deg, rgba(85,218,233,0) 0%, rgba(85,218,233,0.053658963585434205) 50%, rgba(85,218,233,0.10127801120448177) 100%);
-        background-repeat: no-repeat;
-        background-size: 130px, 100px, 200px, auto, auto, auto;
-        background-position: 95% 95%, 5% 70%, 35% 35%, 55% 100%, 85% 5%, 0 0;
+  @include for-size(desktop) {
+    background-image: url(../images/about/bg/drop-mini-small.png),
+      url(../images/about/bg/drop-mini-mid.png), url(../images/about/bg/drop-mini-large.png),
+      url(../images/about/bg/pattern.png), url(../images/about/bg/pattern.png),
+      linear-gradient(
+        180deg,
+        rgba(85, 218, 233, 0) 0%,
+        rgba(85, 218, 233, 0.053658963585434205) 50%,
+        rgba(85, 218, 233, 0.10127801120448177) 100%
+      );
+    background-repeat: no-repeat;
+    background-size: 130px, 100px, 200px, auto, auto, auto;
+    background-position: 95% 95%, 5% 70%, 35% 35%, 55% 100%, 85% 5%, 0 0;
 
-        @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-            background-image: url(../images/about/bg/drop-mini-small@2x.png), url(../images/about/bg/drop-mini-mid@2x.png), url(../images/about/bg/drop-mini-large@2x.png), url(../images/about/bg/pattern@2x.png), url(../images/about/bg/pattern@2x.png);
-        }
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/about/bg/drop-mini-small@2x.png),
+        url(../images/about/bg/drop-mini-mid@2x.png), url(../images/about/bg/drop-mini-large@2x.png),
+        url(../images/about/bg/pattern@2x.png), url(../images/about/bg/pattern@2x.png);
     }
+  }
 }
 .about-container-content {
-    @include for-size(tablet) {
-        display: flex;
-        align-items: center;
-    }
-    @include for-size(desktop) {
-        align-items: flex-start;
-    }
+  @include for-size(tablet) {
+    display: flex;
+    align-items: center;
+  }
+  @include for-size(desktop) {
+    align-items: flex-start;
+  }
 }
 .about-container-content__text {
-    @include for-size(tablet) {
-        margin-right: 40px;
-        width: 50%;
-    }
-    @include for-size(desktop) {
-        margin-right: 60px;
-        width: 50%;
-    }
+  @include for-size(tablet) {
+    margin-right: 40px;
+    width: 50%;
+  }
+  @include for-size(desktop) {
+    margin-right: 60px;
+    width: 50%;
+  }
 }
 .about-container-content__overhead {
-    margin: 0 0 20px 0;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.62;
-    color: var(--text-font-second);
+  margin: 0 0 20px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.62;
+  color: var(--text-font-second);
 
-    @include for-size(tablet) {
-        margin: 0 0 40px 0;
-    }
-    @include for-size(desktop) {
-        font-size: 18px;
-        line-height: 1.67;
-    }
+  @include for-size(tablet) {
+    margin: 0 0 40px 0;
+  }
+  @include for-size(desktop) {
+    font-size: 18px;
+    line-height: 1.67;
+  }
 }
 .about-container-content__desc {
-    margin: 0;
-    @include for-size(mobile-only) {
-        text-align: center;
-    }
+  margin: 0;
+  @include for-size(mobile-only) {
+    text-align: center;
+  }
 
-    .bold-name-company {
-        font-weight: 700;
-        color: var(--title-cl);
-    }
-    .analysis {
-        font-style: normal;
-        color: var(--text-font-second);
-    }
+  .bold-name-company {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .analysis {
+    font-style: normal;
+    color: var(--text-font-second);
+  }
 }
 .about-container-content__img {
-    display: none;
+  display: none;
 
-    @include for-size(tablet) {
-        display: inline-block;
-        width: auto;
-    }
+  @include for-size(tablet) {
+    display: inline-block;
+    width: auto;
+  }
 }
 .img-box {
-    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
-    border-radius: 3px;
-    overflow: hidden;
+  box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+  border-radius: 3px;
+  overflow: hidden;
 }
