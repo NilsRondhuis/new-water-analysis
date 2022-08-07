@@ -16,4 +16,4 @@ import './js/common/scroll-into-start';
 import './js/btn-order/btn-order';
 import './js/btn-up/btn-up';
 import './js/form/on-submit-telegram';
-
+import './js/copy-year/copy-year';

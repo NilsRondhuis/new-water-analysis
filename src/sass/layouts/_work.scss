@@ -1,35 +1,39 @@
 .section-work {
-    text-align: center;
-    background-image: linear-gradient(180deg, rgba(239,252,254,1) 0%, rgba(239,252,254,0.19931722689075626) 10%, rgba(239,252,254,0) 20%); 
+  background-image: linear-gradient(
+    180deg,
+    rgba(239, 252, 254, 1) 0%,
+    rgba(239, 252, 254, 0.19931722689075626) 10%,
+    rgba(239, 252, 254, 0) 20%
+  );
 
-    @include for-size(tablet) {
-        text-align: start;
-    }
+  @include for-size(tablet) {
+    text-align: start;
+  }
 }
 .work-container-content {
-    @include for-size(tablet) {
-        display: flex;
-    }
-    @include for-size(desktop) {
-        flex-direction: row-reverse;
-    }
+  @include for-size(tablet) {
+    display: flex;
+  }
+  @include for-size(desktop) {
+    flex-direction: row-reverse;
+  }
 }
 .work-container-content__text-box {
-    margin: 0 0 30px 0;
+  margin: 0 0 30px 0;
 
-    @include for-size(tablet) {
-        margin: 0 20px 0 0;
-        width: 50%;
-    }
-    @include for-size(desktop) {
-        margin: 0 0 0 50px;
-    }
+  @include for-size(tablet) {
+    margin: 0 20px 0 0;
+    width: 50%;
+  }
+  @include for-size(desktop) {
+    margin: 0 0 0 50px;
+  }
 }
 .work-container-content__text {
-    margin: 0;
+  margin: 0;
+  text-align: justify;
 
-    .bold-name-company {
-        text-transform: uppercase;
-    }
+  .bold-name-company {
+    text-transform: uppercase;
+  }
 }
-

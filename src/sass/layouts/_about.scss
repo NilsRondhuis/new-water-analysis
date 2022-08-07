@@ -66,9 +66,7 @@
 }
 .about-container-content__desc {
   margin: 0;
-  @include for-size(mobile-only) {
-    text-align: center;
-  }
+  text-align: justify;
 
   .bold-name-company {
     font-weight: 700;
